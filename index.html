@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dish Discovery</title>
+    <link rel="stylesheet" href="styles.css" />
+       <!-- FAVICON LINK -->
+       <link rel="icon" href="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" type="image/x-icon" />
+    <!-- LINK OF BOOTSTRAP -->   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- LINK OF FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <section>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand">
+              <i class="fa-solid fa-pizza-slice ms-2"></i>
+              <b class="ms-3"> Dish Discovery</b></a
+            >
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 searchInput"
+                type="search"
+                placeholder="Search recipe here..."
+                aria-label="Search"
+              />
+              <button
+                class="searchButton btn border-white"
+                type="submit"
+                style="color: white"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <!-- HERO SECTION -->
+    <section>
+      <div class="container">
+        <div class="row content-wrapper">
+          <div class="col-md-6">
+            <div class="content">
+              <div>
+                <b
+                  >Discover exquisite flavors crafted by award-winning chefs
+                  from renowned restaurants.</b
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-5">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Image"
+                width="350px"
+                height="200px"
+                class="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MAIN SECTION -->
+    <section>
+      <main>
+        <section>
+          <div class="recipe-container"></div>
+          <div class="recipe-detail">
+            <button type="button" class="recipe-close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="recipe-details-content"></div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <section>
+        <div class="b-example-divider"></div>
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Lahore Area's</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Johar Town</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Iqbal Town</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Shahdra</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Bahria Town</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">DHA Lahore</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Services</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Help Center</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Security</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Home Chef's</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">About</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="col-12 col-md-3 mb-4">
+                <h5>Policies</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >Refunds with VISA</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >Human Right's Policy</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >Become an Affiliate</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Our Magazine</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >Corporate Customer</a
+                    >
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="col-12 col-md-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden"
+                      >Email address</label
+                    >
+                    <input
+                      id="newsletter1"
+                      type="text"
+                      class="form-control searchInput"
+                      placeholder="Email address"
+                    />
+                    <button class="btn subscribeBtn" type="button">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+              <p class="text-muted">
+                &copy; 2024 Company, Inc. All rights reserved.
+              </p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                  <a class="link-dark" href="#"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-dark" href="#"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-dark" href="#"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+      </section>
+        </footer>
+      </div>
+    </footer>
+<!-- LINK OF JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+    <!-- LINK OF BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
